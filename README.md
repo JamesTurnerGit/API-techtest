@@ -1,14 +1,5 @@
 # API tech test 
 
-### Review Criteria
-At a high level we will be looking for:
-
-* Clear instructions for how to set up and run the framework on a reviewer's machine
-* Good understanding of the tasks undertaken
-* Well-structured and concise code
-* Use of relevant design patterns
-* Good understanding of errors and how to handle them
-
 ## Installation
 ### Pre-requisites
 * LTS version of NodeJS, and NPM: https://nodejs.org/
@@ -18,8 +9,6 @@ Start the mock API server:
 `npm install && npm run start`
 Run the tests with 
 `npm test`
-
-It runs by default on `http://localhost:3000`
 
 ## Tasks
 
@@ -38,7 +27,8 @@ Using the provided API:
 
 ## Overall comments
 Tasks were completed as listed; in an actual office scenario this tests would not be sufficient for the api.
-In particular it'd be great to have some node ENV files but that would take co-ordination with dev to be sure both tests and server were using the values
+In particular it'd be great to have some node ENV files but that would take co-ordination with dev to be sure both tests and server were using the values.
+If running in a real world situation, depending on server load and connection quality, tests have a chance of intermittently failing, to reduce false positives tests would have to be set to retry.
 
 ## Bugs
 * you can have multible fixtures with the same id (assumption that non-unique id's are not allowed)
@@ -46,8 +36,7 @@ In particular it'd be great to have some node ENV files but that would take co-o
 * The docs suggest you need a int for ID whereas the data structure requires strings to be recoverable
 
 ## task comments
-1.  
-    1. 
+1. 1. 
     1. because this step fell under "all fixtures" the test was done here, in a normal situation you'd do a at least basic check in all, but at least one full deep check on a fixture
 1. guide not complete/accurate
     1. again would normally check in both "all fixtures" and "fixture by id"
