@@ -48,3 +48,4 @@ If running in a real world situation, depending on server load and connection qu
 ## Other comments made on reflection (1/09/2020)
 * the style of the last test does not match up to the earlier ones, small thing but it'd be nice to keep things consistant
 * a lot of the tests end up doing more than one thing which i'd normally avoid like the plague, but was written this way because the specifications called for it; In an actual work scenario i'd try to correct the specifications before doing work
+* furthermore a lot of the tests alter the state of the server; tests should be able to be run in isolation without changing the result
